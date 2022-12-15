@@ -1,0 +1,258 @@
+div {
+    font-family: Poppins;
+    
+}
+a:link { text-decoration: none; }
+a{
+color: #21211B;
+}
+p{
+    color: black;
+    
+}
+.input {
+    max-width: 300px;
+    height: 44px;
+    border-radius: 2rem;
+    padding: 0 1rem;
+    border: 2px solid transparent;
+    font-size: 1rem;
+    transition: border-color .3s cubic-bezier(.25, .01, .25, 1) 0s, color .3s cubic-bezier(.25, .01, .25, 1) 0s, background .2s cubic-bezier(.25, .01, .25, 1) 0s;
+    
+}
+
+.label {
+    text-align: left;
+    display: block;
+    margin-bottom: .3rem;
+    font-size: .9rem;
+    font-weight: bold;
+    color: #000000;
+    transition: color .3s cubic-bezier(.25, .01, .25, 1) 0s;
+}
+
+.input:hover,
+.input:focus,
+.input-group:hover .input {
+    outline: none;
+    border-color: black;
+    
+}
+
+.input-group:hover .label,
+.input:focus {
+    color: #05060fc2;
+}
+
+button {
+    padding: 1.3em 3em;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: black;
+    background-color: #FFEB7E;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+}
+
+button:hover {
+    background-color: black;
+    box-shadow: 0px 15px 20px rgba(229, 144, 46, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
+}
+
+button:active {
+    transform: translateY(-1px);
+}
+
+.text-info {
+    float: left;
+    text-align: center;
+    margin-left: 10%;
+}
+
+.text-info-login {
+    float: left;
+    text-align: center;
+    margin-left: 10%;
+}
+
+.text-info-register {
+    float: left;    
+    margin-left: 45%;
+    height: 50%;
+    text-align: center;
+}
+
+.home-board{
+    float: left;
+    width: 50%;
+    text-align: center;
+    margin-left: 70px ;
+
+}
+.row1{
+float:left;
+text-align: center;
+}
+
+.img-design {
+    float: left;
+    text-align: center;
+    
+}
+
+.logo {
+    margin-top: 50px;
+    width: 0%;
+}
+
+.vector-design-none{
+    width: auto;
+}
+.vector-design{
+    width: auto;
+}
+
+.logo-index{
+    width: 300px;
+}
+
+.logo-design {
+    position:fixed; width:200px;
+}
+
+/* Dropdown*/
+/*the container must be positioned relative:*/
+.custom-select {
+    position: relative;
+    font-family: Arial;
+  }
+  
+  .custom-select select {
+    display: none; /*hide original SELECT element:*/
+  }
+  
+  .select-selected {
+    background-color: #FFEB7E;
+  }
+  
+  /*style the arrow inside the select element:*/
+  .select-selected:after {
+    position: absolute;
+    content: "";
+    top: 14px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: black transparent transparent transparent;
+  }
+  
+  /*point the arrow upwards when the select box is open (active):*/
+  .select-selected.select-arrow-active:after {
+    border-color: transparent transparent black transparent;
+    top: 7px;
+  }
+  
+  /*style the items (options), including the selected item:*/
+  .select-items div,.select-selected {
+    color:black;
+    padding: 8px 16px;
+    border: 1px solid transparent;
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    cursor: pointer;
+    user-select: none;
+  }
+  
+  /*style items (options):*/
+  .select-items {
+    position: absolute;
+    background-color: #fff;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+  }
+  
+  /*hide the items when the select box is closed:*/
+  .select-hide {
+    display: none;
+  }
+  
+  .select-items div:hover, .same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+
+
+/*RESPONSIVE*/
+@media only screen and (max-width: 620px) {
+
+    .text-info-login {
+        margin-top: 10%;
+        text-align: center;
+        margin-left: .5%;
+        width:100%;
+        float: center;
+        margin-left: 0%;
+    }
+    .text-info {
+        text-align: center;
+        margin-left: -10%;
+        width:100%;
+        margin-top: -20%;
+        float: center;
+        font-size: medium;
+    }
+
+
+    .vector-design-none{
+        width: 0;
+    }
+    .vector-design{
+        width: 100%;
+        margin-top: 0%;
+        margin-left: -20%;
+    }
+
+    div {
+        font-size: medium;
+    }
+
+    button {
+        font-size: small;
+    }
+
+    .logo {
+        width: 200px;
+        margin-top: 100px;
+    }
+    .logo-design {
+        width: 0%;
+    }
+
+    .text-info-register {
+        float:left;
+        margin-left: auto;
+    }
+    
+    .row1{
+        margin-left: 15%;
+    }
+    .logo-index{
+        width: 200px;
+    }
+
+    .home-board{
+        float: left; width: 75%; text-align: center;
+        margin-left:50px;
+    
+    }
+}
